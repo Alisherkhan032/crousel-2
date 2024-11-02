@@ -27,6 +27,8 @@ body{
     border: 2px solid rgb(0, 176, 245);
     border-radius: 10px;
     height: 10px;
+    width: 0%;
     position: relative;
     left: 15%;
+    transition: width 0.5s linear;
 }
