@@ -8,12 +8,13 @@ let nextSlide = () => {
     index = (index + 1) % images.length;
 
     progress.style.transition = 'none'; 
-    progress.style.width = '0%';
+    progress.style.width = '0%'; // Set width to 0%
 
-    progress.offsetHeight; 
-
-    progress.style.transition = `width ${timeLimit / 1000}s linear`;
-    progress.style.width = '70%';
+    // Use setTimeout to delay the transition
+    setTimeout(() => {
+        progress.style.transition = `width ${timeLimit / 1000}s linear`; // Set transition for width
+        progress.style.width = '70%'; // Set width to 70%
+    }, 50);
 
     images.forEach(img => {
         img.style.transform = `translateX(${-index * 100}%)`;
