@@ -11,12 +11,18 @@ body{
 .container{
     display: flex;  
     overflow: hidden;
-    width: 70%;
-    height: 80%;
+    width: 90%;
+    height: 50%;
     border: 2px solid;
     border-radius: 10px;
     position: relative;
     margin: 0 auto;
+}
+.crousel{
+    display: flex;
+    align-items: center;
+    gap: 0;
+    height: 80%;
 }
 .container img{
     min-width: 100%;
@@ -29,7 +35,7 @@ body{
     height: 10px;
     width: 0%;
     position: relative;
-    left: 15%;
+    left: 5%;
     /* transition: width 0.5s linear; */
 }
 .buttons{
@@ -38,14 +44,16 @@ body{
     width: 70%;
     display: flex;
     justify-content: space-around;
-    margin-top: 5px;
+    gap: 1em;
+    margin-top: 5em;
 }
 .buttons button{
     cursor: pointer;
-    width: 5em;
+    width: 4em;
     border-radius: 10px;
     font-size: 2em;
     border: 0;
+    
 }
 .buttons button:hover{
     background-color: rgb(220, 220, 220);

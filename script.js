@@ -12,7 +12,7 @@ let updateSlide = () => {
 
     setTimeout(() => {
         progress.style.transition = `width ${timeLimit / 1000}s linear`; 
-        progress.style.width = '70%'; 
+        progress.style.width = '90%'; 
     }, 50);
 
     images.forEach(img => {
@@ -50,4 +50,4 @@ leftButton.addEventListener('click', () => {
 });
 
 progress.style.transition = 'width 5s linear';
-progress.style.width = '70%';
+progress.style.width = '90%';
